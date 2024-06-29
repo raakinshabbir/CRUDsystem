@@ -1,13 +1,3 @@
-/*
- * FriendsBook.cpp - Assignment 1
- * 
- * Class Description: Social network application.
- *
- * In this version, we use our MyADT class.
- *
- * Author: Software developer A
- * Modified on: Jan. 2024
- */
 
 #include <iostream>
 #include <string>
