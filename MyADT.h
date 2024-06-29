@@ -1,19 +1,4 @@
-/*
- * MyADT.h
- * 
- * Class Description: A linear data collection ADT.
- * 
- * Class Invariant: Data collection with the following characteristics:
- *                  - This is a value-oriented data collection and 
- *                    the elements are kept in ascending sort order of search key.
- *                  - Each element is unique (no duplicates). 
- *                  - Its data structure (CDT) is not expandable. This signifies that 
- *                    when this data collection becomes full, you do not have to resize 
- *                    its data structure (not in this Assignment 1). 
- *
- * Author: AL and Raakin Shabbir
- * Last modified on: Jan. 2024
- */
+
  
  
 #ifndef MyADT_H
@@ -31,11 +16,6 @@ class MyADT {
 
 private:
 
-/* 
- * You can add more data members (attributes) to this class, if needed,
- * but you cannot remove/change the data members below.
- * However, you can change the value "5" used to initialise MAX_ELEMENTS.
- */
  
     constexpr static unsigned int MAX_ALPHA = 26;   // 26 letters in the alphabet 
     constexpr static unsigned int MAX_ELEMENTS = 5; // Small capacity so can test when data collection becomes full 
@@ -44,29 +24,16 @@ private:
     unsigned int elementCount[MAX_ALPHA];           // Current element count in each of the MAX_ALPHA arrays of elements
 
 
-/* 
- * You can add private methods to this class, if needed.
- */
- 
-    // Utility method(s)
 
       
 public:
 
-/* 
- * You cannot remove/change the public methods below.
- * In other words, you cannot change the ***public interface*** of this class. 
- */
 
     // Default constructor
     MyADT();
 
-    // Copy constructor - Covered in Lab 3
     MyADT(const MyADT& rhs);
 
-	// Overloaded assignment operator - Covered in Lab 5
-    // Therefore, we shall not be overloading this operator in our Assignment 1
-    // MyADT & operator=(const MyADT& rhs);
     
     // Destructor
     // Description: Destroys this object, releasing heap-allocated memory.
