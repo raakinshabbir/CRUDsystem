@@ -1,16 +1,4 @@
-/*
- * Profile.h
- * 
- * Class Description: Models the profile of a user of the social network FriendsBook.
- *                    This profile contains the following characteristics:
- *                    userName, name (first and last name), email address and birthday.
- *       
- * Class Invariant: The userName must be a non-empty string, with a minimum length of 1 character.
- *                  It must start with a lower case letter (a to z), the rest can be any ASCII characters.              
- *
- * Author: AL
- * Last modified: Jan. 2024
- */
+
 
 #ifndef PROFILE_H
 #define PROFILE_H
@@ -20,8 +8,6 @@
 using std::string;
 using std::ostream;
 
-
-/* This file contains the definition of the Profile class. You cannot change the content of this file. */
 
 class Profile {
      
@@ -34,12 +20,6 @@ private:
     string email;
     string birthday;
 
-    // Description: Sets the Profile object's userName - Private method
-    // Postcondition: userName is set to aUserName if aUserName 
-    //                is valid (i.e., it does not break the class invariant),
-    //                otherwise it is set to defaultStrValue.
-    // Reflection (for you to think about on your own - you do not need to provide an answer 
-    //  as part of this Assignment 1): Why is this method not part of the public interface?
     void setUserName(const string aUserName);
     
     
